@@ -1,1 +1,456 @@
+/*DELETE THE CSS FOLDER(!NOT THE FILE THE FOLDER) THEN ADD THIS FILE TO THE IMAGES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+    --BG-COLOR:#000000;
+    --BTN-COLOR:white;
+    --SIDE-COLOR:#333;
+    overflow-x: HIDDEN;
+}
+body {
+    font-family: "lato", sans-serif;
+}
+header{
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--BG-COLOR);
+}
+header::before{
+    content: '';
+    width: 143px;
+    height: 23px;
+    background-color: var(--BG-COLOR);
+    position: absolute;
+    margin-top: 17vh;
+}
+nav{
+    display: flex;
+    margin: 3rem;
+}
+nav li{
+    list-style-type: none;
+}
+header nav li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--BTN-COLOR);
+    font-size: 30px;
+    margin-right: 3rem;
+    transition: all ease-in-out 2s;
+}
+header nav li a::before{
+    content: '';
+    width: 0%;
+    background: var(--BTN-COLOR);
+    height: 2px;
+    position: absolute;
+    margin-top: 2.3rem;
+    transition: all ease-in-out 1s;
+}
+header nav li a:hover::before{
+    width: 6%;
+}
+header nav a button {
+    background: var(--BTN-COLOR);
+    border: none;
+    border-radius: 1rem;
+    font-size: 34px;
+    font-weight: 400;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: -0.7rem;
+    transition: all ease-in-out 1s;
+    border: 1px solid  var(--BTN-COLOR);
+}
 
+header nav a button:hover{
+    background: var(--BG-COLOR);
+    color: var(--BTN-COLOR);
+    border:1px solid var(--BTN-COLOR);
+}
+main {
+    background-image: url(css/Images/BG.png);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--BTN-COLOR);
+    text-align: center;
+  }
+  main h1 {
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    font-weight: 550;
+    padding-top: 1.5rem;
+  }
+  main article {
+    margin: 10rem 45rem 0 0;
+  }
+  main article h3 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  main article p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+  .btns {
+    margin-top: 1.5rem;
+    margin-right: 4rem;
+  }
+ .btns a button {
+    width: 200px;
+    padding: 1rem;
+    font-size: 36px;
+    margin-left: 2rem;
+    border:2px solid var(--BG-COLOR);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .btns a button:hover{
+    background: var(--BG-COLOR);
+    color: var(--BTN-COLOR);
+    border:2px solid var(--BTN-COLOR);
+  }
+ .btns .dark-color {
+    background: var(--BG-COLOR);
+    color: var(--BTN-COLOR);
+    border: 2px solid var(--BTN-COLOR);
+    transition: 1s;
+  }
+  .btns .dark-color:hover{
+    background: var(--BTN-COLOR);
+    color: var(--BG-COLOR);
+    border: 2px solid var(--BG-COLOR);
+  }
+
+/* MEDIA QUERIES */
+  @media screen and (max-width:375px){
+    .page1{
+        width: 375px;
+        height: 600px;
+        margin-bottom: 7rem;
+    }
+    header{
+        width: 375px;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+    }
+    header::before{
+        content: '';
+        width: 0px;
+        height:0px;
+        background-color: var(--BTN-COLOR);
+    }
+    .logo img{
+        width: 55px;
+        height: 50px;
+    }
+    nav{
+        display: flex;
+        margin: 3rem;
+        display: none;
+    }
+    main{
+        width: 375px;
+        height: 90vh;
+    }
+    main h1 {
+        font-size: 1.5rem;
+        font-weight: 550;
+    }
+    main article {
+        width: 220px;
+        height: 100px;
+        margin: 2rem 45rem 0 0.5rem;
+    }
+    main article h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    main article p {
+        margin-top: 0.7rem;
+        font-size: 0.9rem;
+        line-height: 15px;
+    }
+    .btns {
+        margin-top: 0.5rem;
+        margin-right: 4rem;
+        display: flex;
+      }
+     .btns a button {
+        width: 100px;
+        padding: 0.5rem;
+        font-size: 20px;
+        margin-left: 6px;
+        border: none;
+
+      }
+     .btns .dark-color {
+        border: none;
+      }
+}
+
+
+
+  .page2 .sv { 
+    width: 96%;
+    height: 80px;
+    background: var(--BG-COLOR);
+    color: var(--BTN-COLOR);
+    margin: 1rem 0 1rem 2rem;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .page2 .sv h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+.page2 figure{
+    display: flex;
+    justify-content: space-evenly;
+}
+.page2 figure img{
+    width: 30rem;
+    height: 30rem;
+}
+
+.page3 .sd { 
+    width: 96%;
+    height: 80px;
+    background: var(--BG-COLOR);
+    color: var(--BTN-COLOR);
+    margin: 1rem 0 1rem 2rem;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .page3 .sd h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+.imgs{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.imgs img{
+    width: 31rem;
+    height: 40rem;
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s;
+}
+.imgs .layer{
+    background: var(--SIDE-COLOR);
+    width: 31rem;
+    height: 40rem;
+    text-align: center;
+}
+.imgs .layer h1{
+    font-size: 2.5rem;
+    position: relative;
+    bottom: 10%;
+    color: var(--BTN-COLOR);
+    transition: 1s;
+    opacity: 0;
+}
+.imgs .layer p{
+    position: relative;
+    bottom: 10%;
+    color: var(--BTN-COLOR);
+    transition: 1s;
+    opacity: 0;
+    font-size: 2rem;
+}
+.imgs img:hover{
+    opacity: 0.5;
+}
+.imgs .layer:hover h1,.layer:hover p{
+    opacity: 1;
+    position: relative;
+    bottom: 60%;
+}
+.page4 .FAQ {
+    width: 96%;
+    height: 80px;
+    background: var(--BG-COLOR);
+    color: var(--BTN-COLOR);
+    margin: 1rem 0 1rem 2rem;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .page4 .FAQ h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .page4 .q1 {
+    width: 96%;
+    margin-left: 2rem;
+    padding: 0.8rem;
+    border: 1px solid var(--BG-COLOR);
+    border-right: none;
+    border-left: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .page4 .q1 p {
+    font-size: 2rem;
+  }
+  .page4 .q1 .plus {
+    background: var(--BTN-COLOR);
+    border: none;
+    font-size: 3rem;
+    color: var(--PLUS-COLOR);
+    cursor: pointer;
+  }
+  .page4 .p{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  .page5{
+    margin-bottom: 5rem;
+  }
+  .page5 .pages {
+    width: 96%;
+    height: 80px;
+    background: var(--BG-COLOR);
+    color: var(--BTN-COLOR);
+    margin: 1rem 0 1rem 2rem;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .page5 .pages h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .page5 .page-img {
+  /*   THE REASON I MADE THE COLUMNS 3 AND ROWS 2 IS CAUSE IT DOESNT COME RIGHT IN LARGER DEVICES I WILL CHANGE IT UP FOR SMALLER SCREEN */
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+  }
+  .page-img .layer{
+    width: 450px;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    background-color: var(--SIDE-COLOR);
+  }
+.page-img .layer p{
+    position: relative;
+    bottom: -90%;
+    color: var(--BTN-COLOR);
+    transition: 1s;
+    opacity: 0;
+    font-size: 2.5rem;
+}
+  .page-img img{
+    width: 450px;
+    height: 500px;
+    margin: 0 2rem 5rem 2rem;
+    position: absolute;
+    left:-7.2%;
+    cursor: pointer;
+    opacity: 1;
+    transition: 1s;
+  }
+  .page-img img:hover{
+    opacity: 0.5;
+  }
+  .page-img .layer:hover p{
+    position: relative;
+    bottom: -40%;
+    opacity: 1;
+}
+  footer {
+    background-color: var(--BG-COLOR);
+    color: var(--BTN-COLOR);
+  }
+  footer .logo-sn {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .logo-sn h1 {
+    margin: 3rem 15rem 3rem 3rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+  footer .logo-sn img {
+    width: 200px;
+    height: 175px;
+    margin: 1rem 3rem 1rem 0;
+  }
+  footer .cu-pages {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .cu-pages .cu {
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+  footer .cu-pages .cu img {
+    width: 50px;
+    height: 50px;
+  }
+  footer .cu-pages .cu p {
+    font-size: 1.5rem;
+    margin-left: 5rem;
+    position: relative;
+    bottom: 11%;
+  }
+  footer .cu-pages h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  footer .cu-pages .h2-page {
+    margin-left: 18rem;
+  }
+  footer nav ul {
+    list-style-type: none;
+    margin: -2rem 20rem 0 0;
+  }
+  footer nav ul a {
+    text-decoration: none;
+    color: var(--BTN-COLOR);
+    font-size: 30px;
+    position: relative;
+    bottom: 5%;
+    transition: 1s;
+  }
+  footer nav ul li{
+    margin-top: 1rem;
+    list-style-type: none;
+  }
+  footer nav ul li a:hover {
+    text-decoration: underline;
+  }
+  footer .p{
+    font-size:2rem;
+    margin-left: 35%;
+    margin-top: 7rem;
+  }
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    height: 10rem;
+    background: var(--BG-COLOR);
+    border-radius:10px;
+}
